@@ -49,12 +49,12 @@ int main() {
 //        test(s);
 //    }
 
-    ifstream fs("/home/fifilyu/workspace/warp-drive-tech/antlr/nginx_demo/test.conf");
+    ifstream fs("/home/zyx/workspace/github/nginx_demo/test.conf");
 
     stringstream ss;
     string line;
     while (getline(fs, line)) {
-        ss << line;
+        ss << line << "\n";
     }
 
     const string content = ss.str();
